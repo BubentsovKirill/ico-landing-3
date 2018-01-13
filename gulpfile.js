@@ -29,6 +29,11 @@ gulp.task('scss', function(){
 gulp.task('js',function(){
   return gulp.src([
         'app/libs/bootstrap-sass/assets/javascripts/bootstrap.js',
+        'app//libs/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js',
+        'app/libs/jquery-countTo/jquery.countTo.js',
+        'app/libs/simplelightbox/dist/simple-lightbox.js',
+
+        'app/libs/slick-carousel/slick/slick.js',
         'app/js/index.js'
   ])
   .pipe(concat('js.min.js'))
@@ -38,6 +43,9 @@ gulp.task('js',function(){
 gulp.task('css',['scss'], function(){
   return gulp.src([
     'app/libs/font-awesome/css/font-awesome.css',
+    'app/libs/simplelightbox/dist/simplelightbox.css',
+
+    'app/libs/slick-carousel/slick/slick-theme.css',
     'app/css/style.css'])
   .pipe(sourcemaps.init())
   .pipe(concat('style.min.css'))

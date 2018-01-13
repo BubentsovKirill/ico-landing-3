@@ -13,6 +13,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	transition:all 0.3s;
+  background-color: #191d27;
 }
 
 ul{
@@ -38,7 +39,7 @@ ul{
   right: 4%;
 }
 .menu-trigger .menui {
-  background: #fff;
+  background: #a89783;
   margin-top: 10px;
   position: absolute;
   transition: 0.6s ease;
@@ -49,7 +50,7 @@ ul{
 .menu-trigger .bottom-menu {
   width: 28px;
   height: 4px;
-  background: #fff;
+  background: #a89783;
   border-radius: 10px;
 }
 .menu-trigger .top-menu {
@@ -62,7 +63,7 @@ ul{
   top: 21px;
 }
 .top-animate {
-  background: #fff !important;
+  background: #a89783 !important;
   top: 13px !important;
   -webkit-transform: rotate(45deg);
   /* Chrome, Safari, Opera */
@@ -72,9 +73,37 @@ ul{
   opacity: 0;
 }
 .bottom-animate {
-  background: #fff !important;
+  background: #a89783 !important;
   top: 13px !important;
   -webkit-transform: rotate(-225deg);
   /* Chrome, Safari, Opera */
   transform: rotate(-225deg);
+}
+
+.sl-overlay{
+      position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #191d27;
+    opacity: .7;
+    display: none;
+    z-index: 1050;
+}
+
+.sl-wrapper .sl-navigation button.sl-prev{
+    left: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.sl-wrapper .sl-navigation button.sl-next{
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.sl-close{
+  display: none;
 }
